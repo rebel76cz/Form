@@ -1,0 +1,17 @@
+{extends 'layout.latte'}
+
+{block title}Answer Page{/block}
+
+{block content}
+    <h1>Formulář byl úspěšně zpracován</h1>
+    <h2>Výpis:</h2>
+    <ul>
+        <li>First Name: {$formData['firstname']}</li>
+        <li>Last Name: {$formData['lastname']}</li>
+        <li>Phone: {$formData['phone']}</li>
+        <li>Date: {$formData['date']}</li>
+        <li>Street: {$formData['street']}</li> 
+        <li>City: {$formData['city']}</li> 
+        <li>Country: {$formData['country']}</li> 
+    </ul>
+{/block}
